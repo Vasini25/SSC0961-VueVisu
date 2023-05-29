@@ -2,7 +2,7 @@
 Repositório destinado ao trabalho 1 da disciplina SSC0961 - Desenvolvimento Web e Mobile
 
 
-##Descrição:
+## Descrição:
 
 Desenvolva um sistema que permita visualizar os dados da planilha, com pelo menos as seguintes funcionalidades:
 
