@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-button>TESTE</v-button>
+    <v-btn>TESTE</v-btn>
   </v-container>
 </template>
 

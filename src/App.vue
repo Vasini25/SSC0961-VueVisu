@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <!--APLICAÇÃO AQUI-->
+    <!--
     <v-card width="400" class="mx-auto mt-5">
       <v-card-title>
         <h1>Login</h1>
@@ -17,7 +18,6 @@
       <v-btn>teste</v-btn>
     </v-card-actions>
     </v-card>
-    <!--
 
       <v-app-bar
       app
@@ -59,18 +59,21 @@
   -->
     <v-main>
       <HelloWorld/>
+      <GetRequisition/>
     </v-main>
   </v-app>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld';
+import GetRequisition from './components/GetRequisition';
 
 export default {
   name: 'App',
 
   components: {
     HelloWorld,
+    GetRequisition,
   },
 
   data: () => ({
