@@ -1,7 +1,7 @@
 <template>
   <v-app>
       <CHeader>
-        <div class="container" style="margin-left: 10px;">
+        <div class="container" style="margin-left: 10px">
           <v-img src="@/assets/icmc.jpg" alt="logo ICMC" contain height="100px" width="250px">
           </v-img>
         </div>
@@ -69,16 +69,6 @@
     </v-main>
     <v-footer class="bg-grey-lighten-1">
       <v-row justify="center" no-gutters>
-        <v-btn
-          v-for="link in links"
-          :key="link"
-          color="white"
-          variant="text"
-          class="mx-2"
-          rounded="xl"
-        >
-          {{ link }}
-        </v-btn>
         <v-col class="text-center mt-4" cols="12">
           ({{ new Date().getFullYear() }}) <strong>SSC0961 - Desenvolvimento Web e Mobile</strong>
         </v-col>

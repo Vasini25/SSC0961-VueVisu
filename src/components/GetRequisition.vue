@@ -1,9 +1,21 @@
 <template>
     <div>
-      <v-btn @click="fetchData()">Buscar Dados</v-btn>
-      <ul v-if="loaded">
-        <li v-for="item in alunos" :key="item.Ordem">{{ item.Nome }}</li>
-      </ul>
+      <v-btn v-if="!loaded" @click="fetchData()">Buscar Dados</v-btn>
+      <!-- Apresentação dos dados após carregados -->
+      <div v-if="loaded">
+        <span v-for="item in alunos" :key="item.Ordem">
+          <v-card class="mx-auto mt-5">
+            <v-card-text>
+            {{ item.Ordem }} - 
+            {{ item.Nome }} - 
+            {{ item.Curso }} - 
+            {{ item.Programa }} - 
+            {{ item.Data }} - 
+            {{ item.Orientador }} ]
+            </v-card-text>
+          </v-card>
+        </span>
+      </div>
     </div>
   </template>
   
