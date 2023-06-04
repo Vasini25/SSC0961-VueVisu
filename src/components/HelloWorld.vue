@@ -1,5 +1,5 @@
 <template>
-  <v-card width="2000" class="mx-auto mt-5">
+  <v-card width="1000" class="mx-auto mt-5">
     <v-card-title>
       <h1>Filtro</h1>
     </v-card-title>
