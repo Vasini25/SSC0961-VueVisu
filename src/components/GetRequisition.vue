@@ -2,10 +2,15 @@
     <div>
       <span v-if="!loaded" class="mx-auto mt-5" width="1000">
         <h1>Defesas</h1>
-        <v-btn @click="fetchData()">Buscar Dados</v-btn>
+        <v-btn color="green" @click="fetchData()">Buscar Dados</v-btn>
       </span>
       <!-- Apresentação dos dados após carregadoss -->
       <div v-if="loaded">
+        <v-alert
+          elevation="24"
+          shaped
+          type="success"
+        ></v-alert>
         <v-card class="mx-auto mt-5" width="1000">
           <v-card-title>
             <h2>Defesas</h2>
