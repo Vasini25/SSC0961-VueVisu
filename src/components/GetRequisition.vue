@@ -3,20 +3,22 @@
       <v-btn v-if="!loaded" @click="fetchData()">Buscar Dados</v-btn>
       <!-- Apresentação dos dados após carregados -->
       <div v-if="loaded">
-        <span v-for="item in alunos" :key="item.Ordem">
-          <v-card class="mx-auto mt-5" width="1000">
-            <v-card-text append-icon="mdi-information">
-              <h3>
-                {{ item.Ordem }} - 
-                {{ item.Nome }}
-                {{ item.Curso }} - 
-                {{ item.Programa }} - 
-                {{ item.Data }} 
-                {{ item.Orientador }} 
-              </h3>
-            </v-card-text>
-          </v-card>
-        </span>
+        <v-btn @click="ordena()">Ordenar</v-btn>
+        <v-card v-for="item in alunos" :key="item.Ordem" 
+        class="mx-auto mt-5" width="1000">
+
+          <v-card-text>
+            <h3>
+              {{ item.Ordem }} - 
+              {{ item.Nome }} -
+              {{ item.Curso }} - 
+              {{ item.Programa }} - 
+              {{ item.Data }} 
+              {{ item.Orientador }} 
+            </h3>
+          </v-card-text>
+
+        </v-card>
       </div>
     </div>
   </template>
