@@ -23,21 +23,6 @@
             :search="search"
             :items="alunos"
           ></v-data-table>
-
-<!--
-  <v-card v-for="item in alunos" :key="item.Ordem" 
-        class="mx-auto mt-5" width="1000">
-          <v-card-text>
-            <h3>
-              {{ item.Ordem }} - 
-              {{ item.Nome }} -
-              {{ item.Curso }} - 
-              {{ item.Programa }} - 
-              {{ item.Data }} 
-              {{ item.Orientador }} 
-            </h3>
-          </v-card-text>
--->
         </v-card>
       </div>
     </div>
