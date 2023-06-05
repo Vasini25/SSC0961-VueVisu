@@ -1,15 +1,19 @@
 <template>
     <div>
-      <v-btn v-if="!loaded" @click="fetchData()">Buscar Dados</v-btn>
-      <!-- Apresentação dos dados após carregados -->
+      <span v-if="!loaded" class="mx-auto mt-5" width="1000">
+        <h1>Defesas</h1>
+        <v-btn @click="fetchData()">Buscar Dados</v-btn>
+      </span>
+      <!-- Apresentação dos dados após carregadoss -->
       <div v-if="loaded">
-        <v-btn @click="ordena()">Ordenar</v-btn>
-        <v-card>
+        <v-card class="mx-auto mt-5" width="1000">
           <v-card-title>
+            <h2>Defesas</h2>
+            <v-spacer></v-spacer>
             <v-text-field
               v-model="search"
               prepend-icon="mdi-magnify"
-              label="Search"
+              label="Buscar"
               single-line
               hide-details
             ></v-text-field>
@@ -64,6 +68,14 @@
           {
             text: "Data",
             value: "Data",
+          },
+          {
+            text: "Curso",
+            value: "Curso",
+          },
+          {
+            text: "Programa",
+            value: "Programa",
           },
         ]
       };

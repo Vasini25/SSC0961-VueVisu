@@ -6,9 +6,9 @@
           </v-img>
         </div>
       </div>
-      
+
     <v-main>
-      <HelloWorld/>
+      <!--<HelloWorld/>-->
       <GetRequisition/>
     </v-main>
     <v-footer class="bg-grey-lighten-1">
@@ -22,14 +22,14 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+//import HelloWorld from './components/HelloWorld';
 import GetRequisition from './components/GetRequisition';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    //HelloWorld,
     GetRequisition,
   },
 
