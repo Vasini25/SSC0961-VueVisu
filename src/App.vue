@@ -1,12 +1,14 @@
 <template>
   <v-app>
-      <div>
-        <div class="container" style="margin-left: 10px">
-          <v-img src="@/assets/icmc.jpg" alt="logo ICMC" contain height="100px" width="250px">
-          </v-img>
-        </div>
+    <div>
+      <v-parallax height="300" src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg">
+      <div class="container" style="margin-left: 10px">
+        <v-img src="@/assets/icmc-noBG.png" alt="logo ICMC" contain height="100px" width="250px">
+        </v-img>
       </div>
-
+      </v-parallax>
+    </div>
+  
     <v-main>
       <!--<HelloWorld/>-->
       <GetRequisition/>
