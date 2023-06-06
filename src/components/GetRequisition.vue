@@ -75,10 +75,6 @@
         .then(response => (this.alunos = response.data.items))
         .then(() => {this.loaded = true})
       },
-
-      teste(){
-        alert("a")
-      },
     }
   };
   </script>
