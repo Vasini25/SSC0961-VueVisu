@@ -8,7 +8,6 @@
       <div v-if="loaded">
         <v-alert
           elevation="24"
-          shaped
           type="success"
         ></v-alert>
         <v-card class="mx-auto mt-5" width="1000">
@@ -23,7 +22,7 @@
               hide-details
             ></v-text-field>
           </v-card-title>
-          <v-data-table
+          <v-data-table style="cursor: pointer"
             :headers="headers"
             :search="search"
             :items="alunos"
@@ -75,6 +74,10 @@
         await axios.get("http://thanos.icmc.usp.br:4567/api/v1/defesas")
         .then(response => (this.alunos = response.data.items))
         .then(() => {this.loaded = true})
+      },
+
+      teste(){
+        alert("a")
       },
     }
   };
